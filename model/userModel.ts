@@ -8,6 +8,7 @@ interface user
     email: string;
     password: string;
     accestoken: number;
+    verify: boolean;
     accountNumber: number;
     followers: {}[];
     following: {}[];
@@ -28,6 +29,10 @@ const userModel = new mongoose.Schema({
     email: {
         type: String,
         Unique:true
+    },
+    verify: {
+        type: Boolean,
+        
     },
     accestoken: {
         type:Number
