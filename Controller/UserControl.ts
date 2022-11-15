@@ -327,7 +327,7 @@ export const resetPassword = async (req:Request, res:Response) :Promise<Response
 				message: "user not found",
 			});
             }
-            return res.status(404).json({ message: "passoword has been changed " });
+            return res.status(201).json({ message: "passoword has been changed " });
         } else
         {
             return res.status(404).json({
